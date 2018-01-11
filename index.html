@@ -9,19 +9,37 @@
     <!--<link rel="shortcut icon" type="image/ico" href="/favicon.ico" />-->
     <title>D3Demo</title>
     <style>
-      .nodeText{
+      .nodeText {
         font-size: 16px;
       }
-      .tooltip{
+      .tooltip {
         position: absolute;
         border: 1px solid #ddd;
         text-align: center;
         background-color: lightsteelblue;
         border-radius: 5px;
       }
-      .tooltip span{
+      .tooltip span {
         display: inline-block;
         padding: 8px 10px;
+      }
+      .cityInfo {
+          position: absolute;
+          padding: 10px;
+          border: 1px solid #000;
+          background-color: #fff;
+          display: none;
+      }
+      .cityInfo.active {
+          display: block;
+      }
+      .cityInfo .close{
+          position: absolute;
+          top: -6px;
+          right: 0;
+          font-size: 19px;
+          font-style: normal;
+          cursor: pointer;
       }
     </style>
   </head>
