@@ -1,39 +1,24 @@
 <!DOCTYPE html>
-<html lang="en" style="height:100%">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="apple-mobile-web-app-title" content="D3Demo">
     <meta name="author" content="Tiankai">
-    <!--<link rel="shortcut icon" type="image/ico" href="/favicon.ico" />-->
-    <title>D3Demo</title>
+    <title>airMap</title>
     <style>
-      .nodeText {
-        font-size: 16px;
-      }
-      .tooltip {
-        position: absolute;
-        border: 1px solid #ddd;
-        text-align: center;
-        background-color: lightsteelblue;
-        border-radius: 5px;
-      }
-      .tooltip span {
-        display: inline-block;
-        padding: 8px 10px;
-      }
-      .cityInfo {
+      .airInfo {
           position: absolute;
           padding: 10px;
           border: 1px solid #000;
           background-color: #fff;
           display: none;
       }
-      .cityInfo.active {
+      .airInfo.active {
           display: block;
       }
-      .cityInfo .close{
+      .airInfo .close{
           position: absolute;
           top: -6px;
           right: 0;
@@ -41,10 +26,64 @@
           font-style: normal;
           cursor: pointer;
       }
+      /* 华北大区 */
+      .beijing path,
+      .tianjin path,
+      .hebei path,
+      .shan1xi path,
+      .neimenggu path{
+        fill: rgb(92, 167, 150);
+      }
+      /* 华南大区 */
+      .guangdong path,
+      .guangxi path,
+      .hunan path,
+      .hubei path,
+      .henan path {
+        fill: rgb(96, 196, 196);
+      }
+      /* 华东大区 */
+      .shanghai path,
+      .zhejiang path,
+      .shandong path,
+      .jiangxi path,
+      .jiangsu path,
+      .fujian path,
+      .anhui path {
+        fill: bisque;
+      }
+      /* 西南大区 */
+      .sichuan path,
+      .chongqing path,
+      .guizhou path,
+      .xizang path {
+        fill: rgb(101, 184, 101);
+      }
+      /* 西北大区 */
+      .shan3xi path,
+      .gansu path,
+      .ningxia path,
+      .qinghai path {
+        fill: lemonchiffon;
+      }
+      /* 东北大区 */
+      .liaoning path,
+      .heilongjiang path,
+      .jilin path {
+        fill:aqua;
+      }
+      /* 云南区 */
+      .yunnan path{
+        fill: rgb(50, 87, 110);
+      }
+      /* 新疆区 */
+      .xinjiang path{
+        fill: rgb(25, 182, 51);
+      }
     </style>
   </head>
-  <body style="height:100%">
-    <div id="app" style="height:100%">
+  <body>
+    <div id="app">
 
     </div>
     <script type="text/javascript" src="js/jquery-1.js"></script>
