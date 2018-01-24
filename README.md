@@ -1,6 +1,6 @@
 # d3Map
 d3.js做的中国地图  
-![d3Map](http://ostu98x74.bkt.clouddn.com/github/d3Map.png);
+![d3Map](http://ostu98x74.bkt.clouddn.com/github/d3map.png);
 ### 鼠标悬停显示 省份名称
 ### 点击城市，显示城市信息
 ### 注意点：
@@ -47,3 +47,13 @@ d3.selectAll("selector > *").remove()
 
 ```
 - val.properties.cities 是一个数组 通过 concat 把它拆开 拼接到 cityData 中
+
+#### svg的动画元素 animateMotion
+```
+<circle cx="0" cy="0" r="5" fill="red">
+ <animateMotion dur="3s" repeatCount="indefinite">
+   <mpath xlink:href="#path"><mpath>
+ </animateMotion>
+</circle>
+```
+可以按照预先定义的一个path移动
